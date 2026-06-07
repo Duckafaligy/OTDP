@@ -1,0 +1,18 @@
+/**
+ * Renders one or more schema.org JSON-LD blocks into the static HTML.
+ * Safe in server components — output is plain <script> tags.
+ */
+export function JsonLd({ data }: { data: object | object[] }) {
+  const blocks = Array.isArray(data) ? data : [data];
+  return (
+    <>
+      {blocks.map((block, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(block) }}
+        />
+      ))}
+    </>
+  );
+}

@@ -1,0 +1,38 @@
+# Ontario Thriving Development Program
+# Public pages are open to all crawlers, including AI / answer engines (AEO).
+# The blog is intentionally hidden from search and AI indexes.
+
+User-agent: *
+Allow: /
+Disallow: /blog
+
+# Answer engines — explicitly welcome on public content
+User-agent: GPTBot
+Allow: /
+Disallow: /blog
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /blog
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /blog
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /blog
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /blog
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /blog
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /blog
+
+Sitemap: https://ontariothrivingdevelopmentprogram.org/sitemap.xml

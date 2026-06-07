@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" fill="currentColor" shape-rendering="geometricPrecision" role="img" aria-label="OTDP">
+  <g fill-rule="evenodd">
+    <!-- O (top-left): outer pill + inner pill cutout -->
+    <path d="M80 20 a60 60 0 0 1 60 60 v20 a60 60 0 0 1 -120 0 v-20 a60 60 0 0 1 60 -60 Z M80 48 a32 32 0 0 0 -32 32 v20 a32 32 0 0 0 64 0 v-20 a32 32 0 0 0 -32 -32 Z"/>
+    <!-- T (top-right): crossbar + stem -->
+    <path d="M180 20 H300 V48 H254 V160 H226 V48 H180 Z"/>
+    <!-- D (bottom-left): outer shape + inner cutout -->
+    <path d="M20 180 L80 180 a60 60 0 0 1 0 120 L20 300 Z M48 208 L80 208 a32 32 0 0 1 0 64 L48 272 Z"/>
+    <!-- P (bottom-right): stem + bulb + inner cutout -->
+    <path d="M180 180 L208 180 a36 36 0 0 1 0 72 L208 300 L180 300 Z M208 198 a18 18 0 0 1 0 36 Z"/>
+    <!-- Sparkle (between O and T) -->
+    <path d="M160 56 L168 80 L192 88 L168 96 L160 120 L152 96 L128 88 L152 80 Z"/>
+    <!-- Sparkle (between D and P) -->
+    <path d="M160 216 L168 240 L192 248 L168 256 L160 280 L152 256 L128 248 L152 240 Z"/>
+  </g>
+</svg>
