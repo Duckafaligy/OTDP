@@ -57,11 +57,12 @@ export function Nav() {
     >
       <div className="container-x">
         <div
-          className={`relative z-40 flex items-center justify-between rounded-2xl px-4 py-2.5 border transition-all duration-500 ${
+          className={`relative z-40 flex items-center justify-between rounded-2xl px-4 py-2.5 border backdrop-blur-md transition-all duration-500 ${
             scrolled
-              ? 'bg-ink-950/90 border-white/10 shadow-[0_10px_30px_-22px_rgba(0,0,0,0.7)] lg:bg-white/[0.07] lg:border-white/[0.12]'
-              : 'bg-ink-950/90 border-white/10 lg:bg-transparent lg:border-transparent'
+              ? 'bg-ink-950/80 border-white/10 shadow-[0_10px_30px_-22px_rgba(0,0,0,0.7)]'
+              : 'bg-ink-950/55 border-white/10'
           }`}
+          style={{ WebkitBackdropFilter: 'blur(12px)' }}
         >
           <Logo />
           <nav className="hidden lg:flex items-center gap-1">
