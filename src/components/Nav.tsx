@@ -38,8 +38,10 @@ export function Nav() {
     >
       <div className="container-x">
         <div
-          className={`flex items-center justify-between rounded-2xl px-4 py-2.5 transition-all duration-500 ${
-            scrolled ? 'glass-strong shadow-[0_10px_30px_-22px_rgba(0,0,0,0.7)]' : ''
+          className={`flex items-center justify-between rounded-2xl px-4 py-2.5 border transition-all duration-500 ${
+            scrolled
+              ? 'bg-ink-950/90 border-white/10 shadow-[0_10px_30px_-22px_rgba(0,0,0,0.7)] md:bg-white/[0.07] md:border-white/[0.12]'
+              : 'bg-ink-950/90 border-white/10 md:bg-transparent md:border-transparent'
           }`}
         >
           <Logo />
@@ -74,7 +76,7 @@ export function Nav() {
         </div>
 
         {open && (
-          <div className="md:hidden mt-3 rounded-2xl glass-strong p-4 animate-in fade-in slide-in-from-top-2 duration-300">
+          <div className="md:hidden mt-3 rounded-2xl bg-ink-950/95 border border-white/10 p-4 animate-in fade-in slide-in-from-top-2 duration-300">
             <ul className="flex flex-col gap-1">
               {links.map((l) => (
                 <li key={l.href}>
