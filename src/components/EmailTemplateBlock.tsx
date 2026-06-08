@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Check, Copy, Mail } from 'lucide-react';
 import { site } from '@/lib/site';
-import { gmailComposeUrl } from '@/lib/email';
+import { gmailComposeUrl, openGmail } from '@/lib/email';
 
 export function EmailTemplateBlock({
   subject,
@@ -63,6 +63,7 @@ export function EmailTemplateBlock({
           href={gmailHref}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={(e) => openGmail(e, to, subject, template)}
           className="btn-primary text-sm"
         >
           <Mail className="h-4 w-4" /> Open in Gmail

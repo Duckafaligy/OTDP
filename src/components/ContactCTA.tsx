@@ -5,7 +5,7 @@ import { Mail, MessageCircle } from 'lucide-react';
 import { Modal } from './Modal';
 import { EmailTemplateBlock } from './EmailTemplateBlock';
 import { site } from '@/lib/site';
-import { gmailComposeUrl } from '@/lib/email';
+import { gmailComposeUrl, openGmail } from '@/lib/email';
 
 const generalTemplate = `Hi OTDP team,
 
@@ -52,6 +52,7 @@ export function ContactCTA() {
               href={gmailComposeUrl(site.email, '', '')}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => openGmail(e, site.email, '', '')}
               className="glass rounded-2xl p-4 hover:bg-white/[0.07] transition"
             >
               <span className="font-mono text-[11px] uppercase tracking-widest text-plum-200/80">
