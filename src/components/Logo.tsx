@@ -23,7 +23,7 @@ export function Logo({
         className={`relative inline-flex ${dims.box} items-center justify-center rounded-2xl bg-white text-ink-950 plum-glow overflow-hidden transition-transform group-hover:scale-[1.03]`}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/logo.svg" alt="" className={dims.img} />
+        <img src="/logo.png" alt="" className={dims.img} />
       </span>
       <span className="flex flex-col leading-none">
         <span className="font-display text-base md:text-lg font-semibold tracking-tight text-white">
@@ -43,7 +43,7 @@ export function LogoMark({ className = '' }: { className?: string }) {
       className={`inline-flex items-center justify-center rounded-2xl bg-white text-ink-950 ${className}`}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/logo.svg" alt="OTDP" className="h-2/3 w-2/3" />
+      <img src="/logo.png" alt="OTDP" className="h-2/3 w-2/3" />
     </span>
   );
 }

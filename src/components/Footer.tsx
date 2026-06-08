@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Instagram, Mail, MapPin } from 'lucide-react';
 import { site } from '@/lib/site';
 import { Logo } from './Logo';
-import { gmailComposeUrl } from '@/lib/email';
+import { GmailLink } from './GmailLink';
 import { studentSignupUrl } from '@/lib/templates';
 
 type FooterLink = { href: string; label: string; external?: boolean };
@@ -50,14 +50,9 @@ export function Footer() {
             <ul className="mt-5 space-y-2 text-sm text-ink-100/80">
               <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 text-plum-300 shrink-0" />
-                <a
-                  className="hover:text-white transition"
-                  href={gmailComposeUrl(site.email, '', '')}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <GmailLink to={site.email} className="hover:text-white transition">
                   {site.email}
-                </a>
+                </GmailLink>
               </li>
               <li className="flex items-center gap-2.5">
                 <Instagram className="h-4 w-4 text-plum-300 shrink-0" />

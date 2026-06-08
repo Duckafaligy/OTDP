@@ -7,7 +7,7 @@ import { SignUpButton } from '@/components/SignUpButton';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema, BASE_URL } from '@/lib/schema';
 import { site } from '@/lib/site';
-import { gmailComposeUrl } from '@/lib/email';
+import { GmailLink } from '@/components/GmailLink';
 
 const description =
   'Contact OTDP — the Ontario Thriving Development Program. Email otdp.org@gmail.com to sign up for free tutoring, partner as a school or community group, volunteer as a tutor, or reach our team. Serving the Greater Toronto Area and all of Ontario online.';
@@ -58,8 +58,6 @@ const routes = [
 ];
 
 export default function ContactPage() {
-  const mailto = gmailComposeUrl(site.email, '', '');
-
   return (
     <>
       <JsonLd
@@ -107,14 +105,12 @@ export default function ContactPage() {
                 <span className="font-mono text-[11px] uppercase tracking-widest text-plum-200/80">
                   Email
                 </span>
-                <a
-                  href={mailto}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <GmailLink
+                  to={site.email}
                   className="mt-1 flex items-center gap-2 text-white hover:text-plum-200 transition"
                 >
                   <Mail className="h-4 w-4 text-plum-300" /> {site.email}
-                </a>
+                </GmailLink>
               </li>
               <li className="glass p-4">
                 <span className="font-mono text-[11px] uppercase tracking-widest text-plum-200/80">
