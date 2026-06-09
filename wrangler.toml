@@ -1,0 +1,6 @@
+# Cloudflare Pages — config as code.
+# `wrangler pages deploy` reads the project name + build output dir from here,
+# so deploys are reproducible and don't depend on dashboard settings.
+name = "otdp"
+pages_build_output_dir = "out"
+compatibility_date = "2024-11-01"
