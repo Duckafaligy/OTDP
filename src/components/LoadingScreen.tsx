@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { LogoMark } from './Logo';
 
 const STORAGE_KEY = 'otdp-seen-loader';
 const MIN_DISPLAY_MS = 1400;
@@ -81,10 +82,7 @@ export function LoadingScreen() {
       <div className="relative">
         <span className="absolute inset-0 -z-10 rounded-3xl bg-plum-500/40 blur-3xl animate-pulse" />
         <div className="loader-hop">
-          <span className="grid h-24 w-24 place-items-center rounded-3xl bg-white plum-glow">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.svg" alt="OTDP" className="h-16 w-16" />
-          </span>
+          <LogoMark className="h-24 w-24 plum-glow" />
         </div>
         {/* Shadow that scales with the hop */}
         <div className="loader-shadow mt-3 mx-auto" />
