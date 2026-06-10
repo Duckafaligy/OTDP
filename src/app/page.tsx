@@ -33,22 +33,22 @@ import {
 const values = [
   {
     title: 'Always free',
-    body: 'Every OTDP service is free to every Ontario student. Full stop.',
+    body: 'Every OTDP feature is free to every Ontario student. Full stop.',
     icon: HeartHandshake,
   },
   {
-    title: 'Multiple ways in',
-    body: 'Visuals, worked examples, real-world analogues — until it clicks.',
+    title: 'In your language',
+    body: 'Guides, plans and techniques in multiple languages — until it clicks, in the language you learn best.',
     icon: BookOpen,
   },
   {
     title: 'Built by students',
-    body: 'Tutors from IB, AP, SHSM, French Immersion & York Arts. We’ve lived your context.',
+    body: 'A student-led non-profit. The platform is automated; the people behind it have lived IB, AP, SHSM, French Immersion & York Arts.',
     icon: GraduationCap,
   },
   {
     title: 'Tied to real life',
-    body: 'An end-of-semester project that links your subject to a cause you care about.',
+    body: 'Career-path guidance at your intensity, plus an end-of-semester project linking your subject to a cause you care about.',
     icon: Sparkles,
   },
 ];
@@ -61,12 +61,13 @@ export default function HomePage() {
 
       <Marquee
         items={[
-          'Free flexible tutoring',
-          'Online or in person',
+          'Free study help',
+          'Fully online & automated',
+          'Personalized study plans',
+          'Career-path guidance',
+          'In your language',
           'All Ontario students',
-          'IB · AP · SHSM · FI · York Arts',
           'Student-led',
-          'Constitution 2026',
         ]}
       />
 
@@ -213,7 +214,7 @@ export default function HomePage() {
                 <div>
                   <span className="eyebrow">Contact</span>
                   <h2 className="mt-5 font-display text-4xl md:text-5xl lg:text-6xl tracking-tight">
-                    Reach out — students, schools, partners, future tutors.
+                    Reach out — students, schools, partners, volunteers.
                   </h2>
                   <p className="mt-5 max-w-2xl text-lg text-ink-100/80 leading-relaxed">
                     The fastest path is a short email. Tap the button — we’ll open Gmail with a

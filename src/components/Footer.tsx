@@ -11,9 +11,9 @@ const cols: { title: string; links: FooterLink[] }[] = [
   {
     title: 'Programs',
     links: [
-      { href: '/programs#core-tutoring', label: 'Core Tutoring' },
-      { href: '/programs#exam-season-intensives', label: 'Exam Season Intensives' },
-      { href: '/programs#pathway-specialists', label: 'Pathway Specialists' },
+      { href: '/programs#study-plans', label: 'Personalized Study Plans' },
+      { href: '/programs#career-pathways', label: 'Career-Path Guidance' },
+      { href: '/programs#exam-season-intensives', label: 'Exam-Season Intensives' },
       { href: '/programs#end-of-semester-project', label: 'End-of-Semester Project' },
     ],
   },
@@ -44,8 +44,8 @@ export function Footer() {
           <div>
             <Logo />
             <p className="mt-4 max-w-xs text-sm text-ink-100/70 leading-relaxed">
-              Free, flexible tutoring and academic resources — online or in person — for every
-              student across Ontario.
+              Free, fully online study help and career guidance — personalized plans, techniques and
+              pathways, in your language — for every student across Ontario.
             </p>
             <ul className="mt-5 space-y-2 text-sm text-ink-100/80">
               <li className="flex items-center gap-2.5">

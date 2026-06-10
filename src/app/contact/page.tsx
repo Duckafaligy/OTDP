@@ -10,7 +10,7 @@ import { site } from '@/lib/site';
 import { gmailComposeUrl } from '@/lib/email';
 
 const description =
-  'Contact OTDP — the Ontario Thriving Development Program. Email otdp.org@gmail.com to sign up for free tutoring, partner as a school or community group, volunteer as a tutor, or reach our team. Serving the Greater Toronto Area and all of Ontario online.';
+  'Contact OTDP — the Ontario Thriving Development Program. Email otdp.org@gmail.com to sign up for free, fully online study help and career guidance, partner as a school or community group, volunteer, or reach our team. Serving all of Ontario, online.';
 
 export const metadata = {
   title: 'Contact OTDP',
@@ -38,7 +38,7 @@ const routes = [
   {
     icon: GraduationCap,
     title: 'Students',
-    body: 'Sign up for free tutoring with a ready-made email template.',
+    body: 'Sign up for free, online study help with a ready-made email template.',
   },
   {
     icon: Briefcase,
@@ -47,8 +47,8 @@ const routes = [
   },
   {
     icon: Mail,
-    title: 'Volunteers & tutors',
-    body: 'Want to tutor, mentor or help run OTDP? Tell us your subjects and time.',
+    title: 'Volunteers & contributors',
+    body: 'Want to help build content, translations or the platform? Tell us your skills and time.',
   },
   {
     icon: Megaphone,

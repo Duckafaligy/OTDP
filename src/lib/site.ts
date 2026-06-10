@@ -1,13 +1,13 @@
 export const site = {
   name: 'Ontario Thriving Development Program',
   shortName: 'OTDP',
-  tagline: 'Free, flexible tutoring for every student in Ontario.',
+  tagline: 'Free, automated study help and career guidance for every student in Ontario.',
   description:
-    'OTDP is a student-led non-profit providing free flexible tutoring, guidance, and academic resources — online or in person — for all students across Ontario.',
+    'OTDP is a student-led non-profit running a free, fully online platform that builds personalized study plans, teaches study techniques, and maps career paths — in your language — for every student across Ontario.',
   email: 'otdp.org@gmail.com',
   altEmail: 'otdp.org@gmail.com',
   phone: '',
-  location: 'Greater Toronto Area · serving all of Ontario',
+  location: 'Fully online · serving all of Ontario',
   founded: '2026',
   constitution: 'Constitution ratified 2026',
   // Instagram handle — canonical URL uses www. + trailing slash so the period
@@ -21,8 +21,8 @@ export const site = {
   },
   stats: [
     { value: '$0', label: 'Always free — no tuition, ever' },
-    { value: 'On + Off', label: 'Online or in person, your call' },
+    { value: '100%', label: 'Fully online & automated' },
+    { value: 'Multi', label: 'Learn in your language' },
     { value: 'All ON', label: 'Open to every student in Ontario' },
-    { value: '2026', label: 'Student-led, newly constituted' },
   ],
 };

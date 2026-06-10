@@ -39,22 +39,23 @@ export const metadata: Metadata = {
     template: '%s | OTDP',
   },
   description:
-    'OTDP is a student-led non-profit providing free, flexible tutoring, guidance and academic resources — online or in person — for every student across Ontario.',
+    'OTDP is a student-led non-profit running a free, fully online platform that builds personalized study plans, teaches study techniques, and maps career paths — in your language — for every student across Ontario.',
   applicationName: 'OTDP',
   authors: [{ name: 'Ontario Thriving Development Program' }],
   creator: 'Ontario Thriving Development Program',
   publisher: 'Ontario Thriving Development Program',
   category: 'education',
   keywords: [
-    'Ontario tutoring',
-    'free tutoring Ontario',
+    'free study help Ontario',
+    'online study platform Ontario',
+    'automated study plans',
+    'career path guidance students',
     'student-led non-profit',
-    'IB tutoring',
-    'AP tutoring',
+    'IB study help',
+    'AP study help',
     'SHSM',
-    'French Immersion tutoring',
-    'online tutoring Ontario',
-    'free student tutoring GTA',
+    'French Immersion',
+    'multilingual study resources',
     'OTDP',
   ],
   alternates: {
@@ -67,12 +68,13 @@ export const metadata: Metadata = {
     siteName: 'Ontario Thriving Development Program',
     title: 'Ontario Thriving Development Program',
     description:
-      'Free, flexible tutoring for every student in Ontario — online or in person. No tuition, no entry tests.',
+      'Free, fully online study help and career guidance for every student in Ontario — personalized plans, techniques and pathways, in your language. No tuition, no catch.',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Ontario Thriving Development Program',
-    description: 'Free, flexible tutoring for every student in Ontario — online or in person.',
+    description:
+      'Free, fully online study help and career guidance for every student in Ontario — in your language.',
   },
   robots: {
     index: true,
