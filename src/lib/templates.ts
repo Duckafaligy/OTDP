@@ -17,11 +17,14 @@ Program (if any): [Public / IB / AP / SHSM / French Immersion / York Arts / Othe
 Subjects I'd like help with:
 [List subjects + a sentence on what you find hardest]
 
-When I'm usually free:
-[Days / times that work for you]
+Career path I'm aiming for (if any):
+[e.g. nursing, software, trades, undecided]
 
-How I'd prefer to meet:
-[Online / In person — GTA / Either]
+How intense do I want to go:
+[Just exploring / Steady / All-in]
+
+Preferred language for guides:
+[e.g. English, French, other]
 
 Anything else we should know:
 [Optional — accommodations, exam dates coming up, goals, etc.]

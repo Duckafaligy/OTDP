@@ -8,7 +8,7 @@ import { breadcrumbSchema, serviceSchema, howToSignUpSchema } from '@/lib/schema
 import { site } from '@/lib/site';
 
 const description =
-  'OTDP (Ontario Thriving Development Program) is a student-led non-profit providing free, flexible tutoring, academic guidance and learning resources — online or in person — to every student across Ontario. Learn our mission, what we offer, who we serve and how to get started.';
+  'OTDP (Ontario Thriving Development Program) is a student-led non-profit running a free, fully online platform that builds personalized study plans, teaches techniques, maps career paths and offers multilingual resources for every student across Ontario. Learn our mission, what we offer, who we serve and how to get started.';
 
 export const metadata = {
   title: 'About OTDP',
@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     url: '/about/',
-    title: 'About OTDP — free, student-led tutoring across Ontario',
+    title: 'About OTDP — free, student-led study platform for Ontario',
     description,
   },
 };
@@ -25,18 +25,18 @@ export const metadata = {
 const offerings = [
   {
     icon: GraduationCap,
-    title: 'Free 1:1 & small-group tutoring',
-    body: 'Sessions in the subjects you need, run by tutors who know your pathway — online or in person across the GTA.',
+    title: 'Personalized study plans',
+    body: 'An automated plan built around your subjects, pace and goals — set your own intensity, from chill to all-in. Fully online.',
   },
   {
     icon: HeartHandshake,
-    title: 'Academic guidance & mentorship',
-    body: 'Course selection, study strategy and post-secondary guidance from students who’ve recently been there.',
+    title: 'Career-path guidance',
+    body: 'Tell it the career you want and how extreme you want to go; it maps the courses, skills and steps and feeds them into your plan.',
   },
   {
     icon: Library,
-    title: 'A free resource library',
-    body: 'Notes, worked examples and exam prep built around how students actually learn — open to everyone in Ontario.',
+    title: 'A free, multilingual resource library',
+    body: 'Notes, study techniques and exam prep in multiple languages — open to every student in Ontario.',
   },
   {
     icon: Sparkles,
@@ -48,15 +48,15 @@ const offerings = [
 const steps = [
   {
     title: 'Send the sign-up email',
-    body: 'Tap any “Sign up” button — it opens a Gmail draft with a short template. Add your grade, school and the subjects you want help with.',
+    body: 'Tap any “Sign up” button — it opens a Gmail draft with a short template. Add your grade, school, subjects, career goal and preferred language.',
   },
   {
-    title: 'We match you with a tutor',
-    body: 'A real person replies, usually within a week, and pairs you with a tutor who knows your subject and pathway.',
+    title: 'Get set up with the platform',
+    body: 'A real person replies, usually within a week, and gets you access to the free online platform, tuned to your pathway.',
   },
   {
-    title: 'Attend your sessions',
-    body: 'Meet online or in person across the GTA — as often or as little as you need. Every session is free.',
+    title: 'Study on your own time',
+    body: 'Use your study plan, guided walkthroughs, techniques and career guidance whenever you need — fully online, in your language.',
   },
   {
     title: 'Apply it in the project',
@@ -85,14 +85,14 @@ export default function AboutPage() {
           <Reveal>
             <span className="eyebrow">About OTDP</span>
             <h1 className="mt-5 font-display text-4xl md:text-6xl lg:text-7xl tracking-tight max-w-4xl">
-              A free, student-led tutoring non-profit for{' '}
+              A free, student-led study platform for{' '}
               <Highlight color="amber">every Ontario student</Highlight>.
             </h1>
             <MarkerUnderline className="mt-3 h-3 w-72 text-amber-400/70" />
             <p className="mt-7 max-w-3xl text-lg md:text-xl text-ink-100/80 leading-relaxed">
-              The Ontario Thriving Development Program (OTDP) provides free, flexible tutoring,
-              academic guidance and learning resources — online or in person — to every student
-              across Ontario. No tuition, no entry tests, no catch.
+              The Ontario Thriving Development Program (OTDP) is a free, fully online platform —
+              personalized study plans, study techniques, career-path guidance and a multilingual
+              resource library for every student across Ontario. No tuition, no entry tests, no catch.
             </p>
           </Reveal>
         </div>
@@ -144,7 +144,7 @@ export default function AboutPage() {
           <Reveal>
             <span className="eyebrow">What we offer</span>
             <h2 className="mt-5 font-display text-3xl md:text-4xl lg:text-5xl tracking-tight max-w-3xl">
-              Free tutoring, guidance and resources — for{' '}
+              Free study help, guidance and resources — for{' '}
               <Highlight color="teal">everyone</Highlight>.
             </h2>
             <MarkerUnderline className="mt-3 h-3 w-64 text-teal-400/70" />
@@ -181,9 +181,9 @@ export default function AboutPage() {
                 'Any grade, any Ontario high-school pathway',
                 'Public, IB, AP, SHSM, French Immersion & York Arts',
                 'Struggling or advanced — both welcome',
-                'Online for all of Ontario; in person across the GTA',
+                'Fully online — open anywhere in Ontario',
                 'Math, sciences, English, French & social sciences',
-                'Newcomer families navigating the system',
+                'Available in multiple languages',
               ].map((item) => (
                 <li
                   key={item}
@@ -203,7 +203,7 @@ export default function AboutPage() {
           <Reveal>
             <span className="eyebrow">How it works</span>
             <h2 className="mt-5 font-display text-3xl md:text-4xl lg:text-5xl tracking-tight max-w-3xl">
-              From sign-up to your first session in{' '}
+              From sign-up to your first study plan in{' '}
               <Highlight color="plum">four steps</Highlight>.
             </h2>
             <MarkerUnderline className="mt-3 h-3 w-64 text-plum-400/70" />

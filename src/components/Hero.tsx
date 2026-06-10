@@ -23,7 +23,7 @@ export function Hero() {
             <Sparkles className="h-3.5 w-3.5" /> Student-led · Free for every Ontario student
           </span>
           <h1 className="mt-6 font-display text-5xl md:text-7xl lg:text-[88px] leading-[1.02] tracking-tight">
-            <span className="gradient-text">Free tutoring,</span>
+            <span className="gradient-text">Free study help,</span>
             <br />
             <span className="text-white/95">
               built so{' '}
@@ -35,8 +35,8 @@ export function Hero() {
             </span>
           </h1>
           <p className="mt-7 max-w-2xl text-lg md:text-xl text-ink-100/80 leading-relaxed">
-            Free, flexible tutoring for every student in Ontario — online or in person.
-            No tuition, no entry tests, no catch.
+            A free, fully online platform for every student in Ontario — automated study plans,
+            techniques and career guidance, in your language. No tuition, no entry tests, no catch.
           </p>
           <motion.div
             initial={{ opacity: 0, y: 12 }}
@@ -82,23 +82,23 @@ function PinnedCard() {
           <div>
             <p className="font-display text-2xl leading-tight text-ink-900">Always free</p>
             <p className="text-xs text-ink-900/55 font-mono uppercase tracking-widest">
-              Online + in-person
+              Fully online + automated
             </p>
           </div>
         </div>
         <div className="mt-4 h-px bg-ink-900/15" />
         <ul className="mt-4 space-y-2.5 text-sm text-ink-900/80">
           <li className="flex items-center gap-2">
-            <CheckScribble className="h-4 w-4 text-plum-600 shrink-0" /> All Ontario subjects
+            <CheckScribble className="h-4 w-4 text-plum-600 shrink-0" /> Personalized study plans
           </li>
           <li className="flex items-center gap-2">
-            <CheckScribble className="h-4 w-4 text-teal-500 shrink-0" /> IB · AP · SHSM · FI · York Arts
+            <CheckScribble className="h-4 w-4 text-teal-500 shrink-0" /> Career paths · your intensity
           </li>
           <li className="flex items-center gap-2">
-            <CheckScribble className="h-4 w-4 text-amber-500 shrink-0" /> End-of-semester project
+            <CheckScribble className="h-4 w-4 text-amber-500 shrink-0" /> Available in your language
           </li>
         </ul>
-        <p className="mt-4 font-script text-2xl text-plum-700">— book a slot.</p>
+        <p className="mt-4 font-script text-2xl text-plum-700">— start in minutes.</p>
       </div>
     </motion.div>
   );

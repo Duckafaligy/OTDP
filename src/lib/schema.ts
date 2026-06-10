@@ -47,31 +47,32 @@ export const organizationSchema = {
     audienceType: 'Ontario students',
   },
   knowsAbout: [
-    'Free tutoring',
+    'Free online learning platform',
+    'Automated personalized study plans',
+    'Study techniques and strategies',
+    'Career-path guidance',
+    'Multilingual study resources',
     'Ontario high school curriculum',
     'International Baccalaureate (IB)',
     'Advanced Placement (AP)',
     'Specialist High Skills Major (SHSM)',
     'French Immersion',
     'York Region Arts',
-    'Mathematics tutoring',
-    'Science tutoring',
     'Exam and EQAO preparation',
-    'Academic mentorship',
     'Post-secondary guidance',
   ],
   sameAs: [site.socials.instagram],
 };
 
-/** The core free-tutoring service offered across Ontario. */
+/** The core free, online study-help service offered across Ontario. */
 export const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   '@id': `${BASE_URL}/#service`,
-  name: 'Free tutoring, guidance and academic resources',
-  serviceType: 'Tutoring and academic mentorship',
+  name: 'Free automated study help, career guidance and academic resources',
+  serviceType: 'Online learning platform and academic guidance',
   description:
-    'Free, flexible one-on-one and small-group tutoring, academic guidance and a resource library for every student in Ontario — delivered online or in person.',
+    'A free, fully online platform that builds personalized study plans, teaches study techniques, maps career paths and offers a multilingual resource library for every student in Ontario.',
   provider: { '@id': `${BASE_URL}/#organization` },
   areaServed: { '@type': 'AdministrativeArea', name: 'Ontario, Canada' },
   audience: { '@type': 'EducationalAudience', educationalRole: 'student' },
@@ -98,14 +99,14 @@ export function breadcrumbSchema(items: { name: string; url: string }[]) {
   };
 }
 
-/** "How to get free tutoring" — strong answer-engine + voice-search content. */
+/** "How to get free study help" — strong answer-engine + voice-search content. */
 export const howToSignUpSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   '@id': `${BASE_URL}/about/#how-it-works`,
-  name: 'How to get free tutoring with OTDP',
+  name: 'How to get free study help with OTDP',
   description:
-    'Sign up for free tutoring from the Ontario Thriving Development Program in a few simple steps.',
+    'Get free, automated study help and career guidance from the Ontario Thriving Development Program in a few simple steps.',
   totalTime: 'P7D',
   estimatedCost: { '@type': 'MonetaryAmount', currency: 'CAD', value: 0 },
   step: [
@@ -113,19 +114,19 @@ export const howToSignUpSchema = {
       '@type': 'HowToStep',
       position: 1,
       name: 'Send the sign-up email',
-      text: 'Tap any “Sign up” button on the site. It opens a Gmail draft pre-filled with a short template — add your grade, school and the subjects you want help with.',
+      text: 'Tap any “Sign up” button on the site. It opens a Gmail draft pre-filled with a short template — add your grade, school, the subjects you want help with, your career goal and your preferred language.',
     },
     {
       '@type': 'HowToStep',
       position: 2,
-      name: 'We match you with a tutor',
-      text: 'A real person replies, usually within a week, and matches you with a tutor who knows your subject and pathway (public, IB, AP, SHSM, French Immersion or York Arts).',
+      name: 'Get set up with the platform',
+      text: 'A real person replies, usually within a week, and gets you access to the free online platform — tuned to your pathway (public, IB, AP, SHSM, French Immersion or York Arts).',
     },
     {
       '@type': 'HowToStep',
       position: 3,
-      name: 'Attend your sessions',
-      text: 'Meet online or in person across the GTA, as often or as little as you need. Every session is free.',
+      name: 'Study on your own time',
+      text: 'Use your personalized study plan, guided walkthroughs, study techniques and career-path guidance whenever you need them — fully online, in your language.',
     },
     {
       '@type': 'HowToStep',

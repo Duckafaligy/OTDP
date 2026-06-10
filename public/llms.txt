@@ -1,11 +1,13 @@
 # Ontario Thriving Development Program (OTDP)
 
-> OTDP is a student-led non-profit providing free, flexible tutoring, guidance and academic resources — online or in person — for every student across Ontario, Canada. No tuition, no entry tests, no catch. Founded 2026.
+> OTDP is a student-led non-profit running a free, fully online platform for every student across Ontario, Canada — personalized study plans, study techniques, career-path guidance and a multilingual resource library. No tuition, no entry tests, no catch. Founded 2026.
 
 ## About
 - Free for every Ontario student — no cost, ever. Funded by partners and donations, not student fees.
-- Delivered online or in person (in-person sessions are GTA-based; online tutoring and the resource library serve all of Ontario).
-- Student-led: tutors come from IB, AP, SHSM, French Immersion, York Arts and mainstream high-school backgrounds.
+- Fully online and automated: there are no human tutors and no in-person sessions. Students get automated study plans, guided walkthroughs, study techniques and career guidance on demand.
+- Career-path guidance is automated around each student's desired career and chosen intensity (from casually exploring to all-in), and maps the courses and skills to get there.
+- Guides, plans and resources are available in multiple languages.
+- Student-led: the people running the organisation come from IB, AP, SHSM, French Immersion, York Arts and mainstream high-school backgrounds.
 - Governed by a Board under the 2026 OTDP Constitution.
 - Subjects: math, sciences, English, French, social sciences and most Ontario high-school subjects.
 - Signature feature: an end-of-semester project linking each subject to a real-world cause, with any funds raised donated to organisations addressing it.
@@ -13,6 +15,7 @@
 ## How to sign up
 - Students sign up by email to otdp.org@gmail.com with the subject "Student sign-up — OTDP".
 - Every "Sign up" button on the website opens a pre-filled Gmail draft using that template.
+- A real person replies (usually within a week) to set students up with access to the platform.
 - Schools, community groups and prospective volunteers reach out to the same address.
 
 ## Key pages
@@ -22,4 +25,4 @@
 ## Contact
 - Email: otdp.org@gmail.com
 - Instagram: https://www.instagram.com/ontario.tdporg/
-- Area served: Greater Toronto Area (in person) and all of Ontario (online).
+- Area served: all of Ontario, fully online.

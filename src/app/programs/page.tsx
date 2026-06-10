@@ -6,7 +6,7 @@ import { programListSchema } from '@/lib/schema';
 import { programs } from '@/data/programs';
 
 const description =
-  'OTDP runs free, flexible tutoring across Ontario — core sessions, exam-season intensives, pathway-specific support (IB, AP, SHSM, French Immersion, York Arts), remedial and advanced tracks, the end-of-semester project, and a free resource library.';
+  'OTDP is a free, fully online platform for Ontario students — personalized study plans, career-path guidance, exam-season intensives, pathway-aware support (IB, AP, SHSM, French Immersion, York Arts), the end-of-semester project, and a multilingual resource library.';
 
 export const metadata = {
   title: 'Our Program',
@@ -31,16 +31,16 @@ export default function ProgramsPage() {
           <Reveal>
             <span className="eyebrow">Our Program</span>
             <h1 className="mt-5 font-display text-5xl md:text-7xl tracking-tight max-w-4xl">
-              <span className="gradient-text-static">Our classes are not</span>
+              <span className="gradient-text-static">This is not</span>
               <br />
               <em className="not-italic font-script text-plum-300">standard tutoring.</em>
             </h1>
             <MarkerUnderline className="mt-3 h-3 w-64 text-plum-400/70" />
             <p className="mt-7 max-w-3xl text-lg md:text-xl text-ink-100/80 leading-relaxed">
-              We aim for every student to reach their full potential —{' '}
-              <Highlight color="amber">at no cost</Highlight>. Built around visuals,
-              concept-grasping and overall quality: covering the gaps schools quietly miss, for
-              every pathway across Ontario.
+              No human tutors and no scheduling — just a free, fully online platform that builds it
+              around you —{' '}
+              <Highlight color="amber">at no cost</Highlight>. Automated study plans, techniques and
+              career guidance, in your language, for every pathway across Ontario.
             </p>
           </Reveal>
         </div>
