@@ -29,10 +29,7 @@ export const organizationSchema = {
     addressRegion: 'ON',
     addressCountry: 'CA',
   },
-  areaServed: [
-    { '@type': 'AdministrativeArea', name: 'Ontario, Canada' },
-    { '@type': 'City', name: 'Greater Toronto Area' },
-  ],
+  areaServed: { '@type': 'AdministrativeArea', name: 'Ontario, Canada' },
   contactPoint: {
     '@type': 'ContactPoint',
     email: site.email,
