@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Instagram, Mail, MapPin } from 'lucide-react';
 import { site } from '@/lib/site';
 import { Logo } from './Logo';
+import { SocialLinks } from './SocialLinks';
 import { gmailComposeUrl } from '@/lib/email';
 import { studentSignupUrl } from '@/lib/templates';
 
@@ -106,11 +107,14 @@ export function Footer() {
         </div>
 
         <div className="mt-10 divider-grad" />
-        <div className="mt-5 flex flex-col items-start justify-between gap-2 sm:flex-row sm:items-center">
+        <div className="mt-5 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-ink-100/60">
             © {new Date().getFullYear()} {site.name}. Made with intention in Ontario.
           </p>
-          <p className="font-script text-lg text-plum-200/80">keep thriving —</p>
+          <div className="flex items-center gap-4">
+            <SocialLinks />
+            <p className="font-script text-lg text-plum-200/80">keep thriving —</p>
+          </div>
         </div>
       </div>
     </footer>

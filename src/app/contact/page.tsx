@@ -4,6 +4,7 @@ import { Reveal, Stagger, StaggerItem } from '@/components/Reveal';
 import { Highlight, MarkerUnderline } from '@/components/Annotate';
 import { ContactCTA } from '@/components/ContactCTA';
 import { SignUpButton } from '@/components/SignUpButton';
+import { SocialLinks } from '@/components/SocialLinks';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema, BASE_URL } from '@/lib/schema';
 import { site } from '@/lib/site';
@@ -90,6 +91,7 @@ export default function ContactPage() {
               <ContactCTA />
               <SignUpButton className="btn-ghost" />
             </div>
+            <SocialLinks className="mt-6" />
           </Reveal>
         </div>
       </section>
