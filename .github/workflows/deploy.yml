@@ -1,0 +1,47 @@
+name: Deploy to Cloudflare Pages
+
+# Builds the static site and deploys it to Cloudflare Pages on every push to
+# main (and on manual run). Requires two repo secrets:
+#   - CLOUDFLARE_API_TOKEN  (token with the "Cloudflare Pages: Edit" permission)
+#   - CLOUDFLARE_ACCOUNT_ID (your Cloudflare account ID)
+# Add them under: GitHub repo → Settings → Secrets and variables → Actions.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Build & deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static export
+        run: npm run build
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # Project name + output dir come from wrangler.toml
+          command: pages deploy

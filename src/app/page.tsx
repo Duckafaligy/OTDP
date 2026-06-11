@@ -18,7 +18,7 @@ import {
 import { site } from '@/lib/site';
 import { programs } from '@/data/programs';
 import { faqs } from '@/data/faqs';
-import { gmailComposeUrl } from '@/lib/email';
+import { GmailLink } from '@/components/GmailLink';
 import {
   ArrowRight,
   BookOpen,
@@ -191,14 +191,12 @@ export default function HomePage() {
               If something here doesn’t quite cover your situation, write to us. We answer every
               email a human writes us — usually within a few business days.
             </p>
-            <a
-              href={gmailComposeUrl(site.email, '', '')}
-              target="_blank"
-              rel="noopener noreferrer"
+            <GmailLink
+              to={site.email}
               className="mt-6 inline-flex items-center gap-2 text-plum-200 hover:text-white transition"
             >
               {site.email} <ArrowRight className="h-4 w-4" />
-            </a>
+            </GmailLink>
           </Reveal>
           <Reveal delay={0.05}>
             <FAQList items={faqs} />
@@ -230,14 +228,12 @@ export default function HomePage() {
                     <span className="font-mono text-[11px] uppercase tracking-widest text-plum-200/80">
                       Email
                     </span>
-                    <a
-                      href={gmailComposeUrl(site.email, '', '')}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <GmailLink
+                      to={site.email}
                       className="mt-1 flex items-center gap-2 text-white hover:text-plum-200 transition"
                     >
                       <Mail className="h-4 w-4 text-plum-300" /> {site.email}
-                    </a>
+                    </GmailLink>
                   </li>
                   <li className="glass rounded-2xl p-4">
                     <span className="font-mono text-[11px] uppercase tracking-widest text-plum-200/80">
